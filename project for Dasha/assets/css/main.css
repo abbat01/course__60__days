@@ -1,0 +1,90 @@
+:root {
+    --bg-color: #141414;
+    --text-color-gray: #6D6D6D;
+}
+* {
+    font-family: 'Manrope', sans-serif;
+}
+body {
+    background-color: var(--bg-color);
+} 
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.start-course {
+    color: white;
+    width: 156px;
+    height: 124px;
+    background-image: url(../icons/Rectangle\ 48.svg);
+    background-repeat: no-repeat;
+    display: grid; 
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    place-items: center;
+    position: relative;
+}
+.header-wrapper {
+    display: flex;
+}
+.start-number {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    grid-area: 1 / 1 / 3 / 2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px; 
+} 
+.start-month {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    grid-area: 1 / 2 / 2 / 3;
+    font-family: 'ALS Klementina', sans-serif;
+    font-size: 18px;
+} 
+.start-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 15px;
+} 
+
+/* ------- */
+
+.duration {
+    width: 124px;  
+}
+.title {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color-gray);
+    line-height: 1;
+}
+.subtitle {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* ---- main ---- */
+.main {
+    background-image: url(../images/bq1.png);
+    background-size: 100%;
+    border: 1px solid;
+    min-height: 1000px;
+}
+.hero-title {
+    color: white;
+    font-size: 110px;
+}
+.hero-title__desktop {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
