@@ -1067,6 +1067,7 @@ top: 120px;
 .fedor {
     position: relative;
     width: 500px;
+
 }
 .showcase-fedor img {
     position: absolute;
@@ -1171,7 +1172,6 @@ top: 120px;
   .product-container {
     position: relative;
     margin-top: 50px;
-    padding: 0 10vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -1197,6 +1197,11 @@ top: 120px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .product-image img:nth-of-type(2) {
+    position: absolute;
+    top: 3px;
+    left: 3px;
   }
   .product-name {
     position: absolute;
@@ -1344,13 +1349,11 @@ top: 120px;
 .slider{
     margin:60px auto 0 auto;
     height:360px;
-    width:1000px;
-    padding:40px;
-    top:100px;
-
-       perspective:1000px;
-       transition:ease-in-out .2s;
-                 position:absolute;
+    width:100%;
+    perspective:1000px;
+    transition:ease-in-out .2s;
+    position:absolute;
+    left: -45px;
 }
 
 
@@ -1384,9 +1387,11 @@ top: 120px;
       transition: cubic-bezier(0,1.95,.49,.73) .4s ;
 }
 .rev-btn-p {
+    display: none;
     left: 200px;
 }
 .rev-btn-n {
+    display: none;
     right: 200px;
 }
 /* ---- accordion --- */
@@ -2232,6 +2237,7 @@ top: 120px;
     
         .rate-wrapper h2 {
             font-size: 40px;
+            margin-top: 65px;
         }
         .rate-row {
             justify-content: center;
@@ -2239,13 +2245,10 @@ top: 120px;
     
         /* --- speakers --- */
         .speakers {
-            background-image: url(../images/speakers-photos.png);
-            background-size: 100%;
-            background-repeat: no-repeat;
+            background-image: none;
         }
         .speakers-wrapper {
             width: 430px;
-            min-height: 1500px;
         }
         .speakers-wrapper h2 {
             font-size: 40px;
@@ -2255,8 +2258,16 @@ top: 120px;
             flex-wrap: wrap;
             max-width: 430px;
         }
+        .daria {
+            background-image: url(../images/daria-bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            min-height: 696px;
+            top: -200px;
+        }
         .daria, .fedor {
-            max-width: 430px;
+            width: 430px !important;
         }
         .daria img, .fedor img {
             display: none;
@@ -2264,7 +2275,7 @@ top: 120px;
         .daria .showcase-daria {
             height: 375px;
             position: absolute;
-            top: 380px;
+            top: 740px;
             left: 62%;
              transform: translateX(-50%);
         }
@@ -2293,7 +2304,7 @@ top: 120px;
             height: 441px;
         }
         .daria .showcase-bottom p {
-            margin-top: 84px;
+            margin-top: 72px;
             margin-left: 70px;
             color: black;
             line-height: 23px;
@@ -2305,6 +2316,14 @@ top: 120px;
         .daria .showcase-bottom li:nth-of-type(1) {
             margin-top: 20px;
             margin-bottom: 5px;
+        }
+        .fedor {
+            background-image: url(../images/fedor-bg.png);
+            background-size: 100%;
+            background-position: 0 -90px;
+            background-repeat: no-repeat;
+            position: static;
+            min-height: 701px;
         }
        .fedor .showcase-bottom {
             width: 337px;
@@ -2348,8 +2367,8 @@ top: 120px;
         }
         .fedor .showcase-fedor {
             position: absolute;
-            top: 500px;
-            left: 408px;
+            top: 1100px;
+            left: 390px;
         }
         .fedor .showcase-bottom { 
             position: absolute;
@@ -2369,6 +2388,9 @@ top: 120px;
             width: 430px;
             padding: 0;
         }
+        .product-card {
+            left: 28px;
+        }
         .review-wrapper h2 {
             font-size: 40px;
         }
@@ -2379,7 +2401,8 @@ top: 120px;
         .slider {
             width: 430px;
             padding: 0;
-            margin: -55px auto 0;
+            margin: 40px auto 0;
+            left: -30px;
         }
         .slide {
             width: 200px;
@@ -2423,6 +2446,10 @@ top: 120px;
             margin: 0 auto;
         }
         /* ----- footer ----- */
+        .footer {
+            position: relative;
+            top: -90px;
+        }
         .footer-menu {
             max-width: 430px;
             flex-direction: column;
@@ -2439,10 +2466,12 @@ top: 120px;
         }
         .policy {
             order: 2;
+            font-size: 14px;
         }
         .watermark {
             order:  3;
             margin: 0;
+            display: none;
         }
         .footer-link {
             display: none;

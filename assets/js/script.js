@@ -7,11 +7,11 @@ productContainers.forEach((item, i) => {
     let containerWidth = containerDimensions.width;
 
     nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
+        item.scrollLeft += containerWidth - 372;
     })
 
     preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
+        item.scrollLeft -= containerWidth - 372;
     })
 })
 
@@ -26,6 +26,7 @@ window.addEventListener('load', onWndLoad, false);
 function onWndLoad() {
    
     var slider = document.querySelector('.slider');
+    let slide = document.querySelectorAll('img')
     var sliders = slider.children;
    
    
@@ -89,7 +90,7 @@ function onWndLoad() {
         }
      
        
-        document.addEventListener('click', slideMouseMove, false);
+        slider.addEventListener('click', slideMouseMove, false);
         document.addEventListener('touchmove', slideMouseMove, false);
 
         document.addEventListener('mouseup', slideMouseUp, false);
