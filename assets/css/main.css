@@ -121,6 +121,9 @@ body {
     line-height: 1;
     margin-top: 55px;
 }
+.hero-title-mobile {
+    display: none;
+}
 .hero-title p{
     padding: 0;
     font-family: 'Bebas Neue', sans-serif;
@@ -232,6 +235,9 @@ font-weight: 600;
     margin-top: 100px;
     margin-bottom: 0;
 }
+.c-w-mobile {
+    display: none;
+}
 .card-wrapper p {
     font-size: 21px;
     text-align: center;
@@ -248,6 +254,9 @@ font-weight: 600;
 .c-sub {
     margin-top: 35px !important;
     width: 494px;
+}
+.c-sub-mobile {
+    display: none;
 }
 .done-icon {
     background-image: url(../icons/education-icon.png);
@@ -358,6 +367,9 @@ font-weight: 600;
     line-height: 30px;
     letter-spacing: 0.04rem;
     transform: translateY(-15%);
+}
+.result-icon-mobile {
+    display: none;
 }
 .r-d {
     transform: translateY(6%);
@@ -581,6 +593,9 @@ padding: 0;
 .stage-btn img {
     margin-left: 10px;
 }
+.stage-accordion {
+    display: none;
+}
 /* ---- how ed part --- */
 
 
@@ -672,6 +687,7 @@ padding: 0;
     height: 163px;
     background-image: url(../images/bg-phones.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -688,6 +704,9 @@ padding: 0;
     letter-spacing: 0.14rem;
     transform: translateY(10px);
     
+}
+.how-ed-mobile {
+    display: none;
 }
 /* ---- rate part --- */
 
@@ -739,7 +758,7 @@ padding: 0;
 }
 .rate-place {
     margin-top: 155px;
-    z-index: 10;
+    z-index: 1000;
 }
 .rate-place p {
     background-color: red;
@@ -1398,7 +1417,7 @@ top: 120px;
     font-size: 80px;
     text-align: center;
 }
-body > div {
+.que body > div {
     
     width: 90%;
     max-width: 1170px;
@@ -1408,28 +1427,28 @@ body > div {
     margin-bottom: 5rem;
 }
 
-details div {
+.que details div {
     padding: 1.5em;
     background: linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%);
     border-radius: 0 0 10px 10px
 }
 
-details div > * + * {
+.que details div > * + * {
     margin-top: 1.5em;
 }
 
-details + details {
+.que details + details {
     margin-top: .5rem;
 }
 
-summary {
+.que summary {
     list-style: none;
 }
-summary::-webkit-details-marker {
+.que summary::-webkit-details-marker {
     display: none;
 }
 
-summary {
+.que summary {
     background: linear-gradient(52.7deg, #1F1F1F 8.37%, #2D2D2D 81.06%);
     border: 1px solid #7B7B7B;
     border-radius: 10px;
@@ -1440,7 +1459,7 @@ summary {
     font-size: 20px;
 }
 
-summary:before {
+.que summary:before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1449,26 +1468,26 @@ summary:before {
 }
 
 
-details[open] summary:before {
+.que details[open] summary:before {
     content: "↑";
 }
-details[open] summary {
+.que details[open] summary {
     background: linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%);
     border-radius: 10px 10px 0 0;
 }
 
-a {
+.que a {
     color: inherit;
     font-weight: 600;
     text-decoration: none;
     box-shadow: 0 1px 0 0;
 }
 
-a:hover {
+.que a:hover {
     box-shadow: 0 3px 0 0;
 }
 
-code {
+.que code {
     font-family: monospace;
     font-weight: 600;
 }
@@ -1515,4 +1534,7 @@ code {
     }
     .footer-link img {
         margin-right: 10px;
+    }
+    .footer-link-mobile {
+        display: none;
     }

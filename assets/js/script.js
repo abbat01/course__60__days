@@ -89,7 +89,7 @@ function onWndLoad() {
         }
      
        
-        document.addEventListener('mousemove', slideMouseMove, false);
+        document.addEventListener('click', slideMouseMove, false);
         document.addEventListener('touchmove', slideMouseMove, false);
 
         document.addEventListener('mouseup', slideMouseUp, false);
