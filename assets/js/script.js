@@ -20,13 +20,14 @@ productContainers.forEach((item, i) => {
 /*! Elastic Slider (c) 2014 // Taron Mehrabyan // Ruben Sargsyan
  */
 
-window.addEventListener('load', onWndLoad, false);
+/*! Elastic Slider (c) 2014 // Taron Mehrabyan // Ruben Sargsyan
+ */
 
+window.addEventListener('load', onWndLoad, false);
 
 function onWndLoad() {
    
     var slider = document.querySelector('.slider');
-    let slide = document.querySelectorAll('img')
     var sliders = slider.children;
    
    
@@ -76,8 +77,8 @@ function onWndLoad() {
     function attachEvents(elem) {
         curSlide = elem;
 
-        curSlide.addEventListener('click', slideMouseDown, false);
-        curSlide.addEventListener('click', slideMouseDown, false);
+        curSlide.addEventListener('mousedown', slideMouseDown, false);
+        curSlide.addEventListener('touchstart', slideMouseDown, false);
     }
     init();
     function slideMouseDown(e) {
@@ -90,7 +91,7 @@ function onWndLoad() {
         }
      
        
-        slider.addEventListener('click', slideMouseMove, false);
+        document.addEventListener('mousemove', slideMouseMove, false);
         document.addEventListener('touchmove', slideMouseMove, false);
 
         document.addEventListener('mouseup', slideMouseUp, false);
@@ -132,7 +133,7 @@ function onWndLoad() {
          
           initX =mouseX;
           e.preventDefault();
-          if (Math.abs(transX) >= curSlide.offsetWidth-500) {
+          if (Math.abs(transX) >= curSlide.offsetWidth-30) {
            
               document.removeEventListener('mousemove', slideMouseMove, false);
               document.removeEventListener('touchmove', slideMouseMove, false);
@@ -189,3 +190,25 @@ function onWndLoad() {
     prevBtn.addEventListener('click', slideMouseDown)
     nextBtn.addEventListener('click', slideMouseDown)
 }
+
+let count = 0;
+function addModules() {
+    const activeModules = document.querySelectorAll('.active');
+    const stageBtn = document.querySelector('.stage-btn')
+    count++
+    if (count % 2 == 0) {
+        stageBtn.style.background = 'linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%)'
+        stageBtn.style.color = 'white'
+        stageBtn.innerHTML= 'Вся программа <img src="./assets/icons/reload.svg" alt="">'
+    } else {
+        stageBtn.style.background = 'linear-gradient(90deg, #FFFEFA -1.12%, #BDBDBD 101.12%)'
+        stageBtn.style.color = 'black'
+        stageBtn.innerHTML = '<p>Свернуть программу <img src="./assets/icons/black-reload.svg" alt=""></p>'
+    }
+    activeModules.forEach((el) => {
+        el.classList.toggle('activeNone')
+    })
+}
+
+    
+
