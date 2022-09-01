@@ -721,10 +721,10 @@ padding: 0;
 .banner-desc p {
     font-family: 'Montserrat';
     font-weight: 500;
-    font-size: 13px;
+    font-size: 18px;
     color: black;
     text-align: center;
-    line-height: 18px;
+    line-height: 25px;
     letter-spacing: 0.14rem;
     transform: translateY(10px);
     margin-top: 30px;
@@ -1470,7 +1470,7 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
 }
 
 .que details div {
-    padding: 40px;
+    padding: 40px 70px;
     background: linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%);
     border-radius: 0 0 10px 10px
 }
@@ -2043,15 +2043,17 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             margin-left: 27px;
             padding: 5px 10px;
             margin-top: 15px;
+            position: absolute;
+            top: 5px;
         }
         .closed-stage-module p {
             position: absolute;
             top: -10px;
-            left: 55px;
+            left: 30px;
         }
         .closed-stage-title {
             position: absolute;
-            bottom: 50px;
+            bottom: 20px;
             left: 30px;
             width: 200px !important;
             height: 40px !important;
@@ -2297,8 +2299,15 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
         bottom: -50px;
         }
         .banner-desc p {
-            position: absolute;
-            top: 0;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 13px;
+            color: black;
+            text-align: center;
+            line-height: 18px;
+            letter-spacing: 0.14rem;
+            transform: translateY(10px);
+            margin-top: 30px;
         }
         /* --- rate --- */
     
