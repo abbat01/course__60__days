@@ -15,6 +15,7 @@ html {
 body {
     background-color: var(--bg-color);
     color: white;
+    margin: 0 auto;
 } 
 .container {
     max-width: 1170px;
@@ -719,14 +720,14 @@ padding: 0;
 }
 .banner-desc p {
     font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 13px;
     color: black;
     text-align: center;
-    line-height: 25px;
+    line-height: 18px;
     letter-spacing: 0.14rem;
     transform: translateY(10px);
-    
+    margin-top: 30px;
 }
 .how-ed-mobile {
     display: none;
@@ -757,16 +758,17 @@ padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 15px;
+    margin-top: 170px;
 }
 .rate-card {
     width: 370px;
-    height: 1498px;
+    height: 1378px;
     position: relative;
 }
 .rate-icon {
     position: absolute;
     left: 50%;
+    top: -80px;
     transform: translateX(-50%);
     z-index: 5;
 }
@@ -775,21 +777,28 @@ padding: 0;
     border: 1px solid #7B7B7B;
     border-radius: 10px;
     width: 100%;
-    height: 1468px;
+    height: 1420px;
     position: absolute;
     bottom: 0;
 }
 .rate-place {
     margin-top: 155px;
-    z-index: 1000;
+    border-top: 1px solid grey;
+    position: relative;
+    text-align: center;
+    z-index: 1;
 }
-.rate-place p {
-    background-color: red;
-    font-size: 15px;
-    line-height: 23px;
-    background: linear-gradient(67.83deg, rgba(210, 210, 210, 0.1) 3.52%, rgba(77, 77, 77, 0.1) 99.38%);
+.rate-place span {
+    background: linear-gradient(67.83deg, rgba(210, 210, 210, 0.6) 3.52%, rgba(77, 77, 77, 0.6) 99.38%);
     backdrop-filter: blur(10px);
     border-radius: 80px;
+    z-index: 1000;
+    padding: 10px 40px;
+}
+.rate-place p {
+    z-index: 1000;
+    font-size: 15px;
+    line-height: 23px;
     width: 175px;
     height: 38px;
     display: flex;
@@ -799,12 +808,14 @@ padding: 0;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 120px;
+    top: -35px;
+    color: grey;
+    padding: 0px 10px;
 }
 .rate-desc-top {
     color: rgba(20, 20, 20, 1);
     text-align: left;
-    margin-top: 60px;
+    margin-top: 150px;
     margin-left: 35px;
     font-size: 16px;
     line-height: 35px;
@@ -1901,7 +1912,7 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
         }
         .stage-accordion div details {
             border-radius: 10px;
-            margin-left: 49px;
+            margin-left: 0;
             margin-top: 33px;
         }
         
@@ -1929,9 +1940,9 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             height: 150px;
             width: 341px;
             z-index: 100;
-            left: -3px;
             background: linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%);
             transition: .3s ease;
+            margin: 0 auto;
         }
         .stage-accordion summary:nth-of-type(1) {
             height: 180px;
@@ -1981,6 +1992,7 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
         
         .stage-accordion details[open] summary {
             height: 551px !important;
+            margin: 0 auto;
         }
         
         .stage-accordion details[open] summary:before {
@@ -2030,6 +2042,7 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             text-align: center;
             margin-left: 27px;
             padding: 5px 10px;
+            margin-top: 15px;
         }
         .closed-stage-module p {
             position: absolute;
@@ -2294,6 +2307,7 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             margin-top: 65px;
         }
         .rate-row {
+            gap: 165px;
             justify-content: center;
         }
     
@@ -2479,6 +2493,8 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             font-size: 40px;
         }
         .que details[open] summary {
+            font-size: 15px;
+            line-height: 20px;
             background: linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%);
             border-radius: 10px 10px 0 0;
             width: 314px;
@@ -2488,18 +2504,21 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             padding: 1.5em;
             background: linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%);
             border-radius: 0 0 10px 10px;
-            width: 337px;
+            width: 303px;
             margin: 0 auto;
+            font-size: 14px;
+            line-height: 20px;
         }
         .que summary {
+            font-size: 15px;
+            line-height: 20px;
             background: linear-gradient(52.7deg, #1F1F1F 8.37%, #2D2D2D 81.06%);
             border: 1px solid #7B7B7B;
             border-radius: 10px;
-            padding: 41px 0 36px 70px;
+            padding: 41px 0 36px 30px;
             cursor: pointer;
             position: relative;
             transition: .3s ease;
-            font-size: 20px;
             width: 314px;
             margin: 0 auto;
         }
@@ -2565,7 +2584,7 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             margin-left: 25px;
         }
         .stage-accordion div details {
-            margin-left: 23px;
+            margin-left: 0;
         }
         .how-ed-mobile {
             margin-left: 30px;

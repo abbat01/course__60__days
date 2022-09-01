@@ -349,7 +349,6 @@
         height: 150px;
         width: 341px;
         z-index: 100;
-        left: -3px;
         background: linear-gradient(63.77deg, #FF7898 28.74%, #FFB3C0 107.82%);
         transition: .3s ease;
     }
