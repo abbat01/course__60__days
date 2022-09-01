@@ -156,7 +156,7 @@ font-weight: 600;
     text-transform: uppercase;
     outline: none;
     letter-spacing: 0.15rem;
-    width: 440px;
+    width: 300px;
 }
 .hero-btn img {
     margin-left: 15px;
@@ -1669,6 +1669,7 @@ box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.3);
             justify-content: center;
         }
         .hero-btn {
+            width: 175px;
             font-size: 12px;
             font-weight: 700;
             padding: 25px 30px;

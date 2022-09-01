@@ -45,14 +45,14 @@
                     <p>Вы с <span>полного нуля научитесь зарабатывать на товарах с Китая без вложений</span> и выйдете на доход от 1000$/мес</p>
                 </div>
                 <div class="hero-button">
-                    <button class="button hero-btn">Принять участие <img src="./assets/icons/finger.svg" alt=""></button>
+                    <a href="#down" class="button hero-btn">Принять участие <img src="./assets/icons/finger.svg" alt=""></a>
                 </div>
             </div>
         </section>
         <section class="two-ways">
             <div class="container">
                 <div class="ways-wrapper">
-                    <h2 class="none">Вы освоите 2 пути заработка на закупках с Китая</h2>
+                    <h2>Вы освоите 2 пути заработка<br> на закупках с Китая</h2>
                     <h2>Вы освоите<br> 2 пути заработка на<br> закупках с Китая</h2>
                     <div class="cards">
                         <div class="card">
@@ -193,7 +193,7 @@
                             <li>Список проверенных продавцов </li>
                         </div>
                     </div>
-                    <div class="stage stage4">
+                    <div class="stage stage4 active activeNone">
                         <div class="stage-module">Модуль 4</div>
                         <div class="stage-title">PINDUODUO</div>
                         <div class="stage-result">
@@ -211,7 +211,7 @@
                             <li>Мобильное приложение, изучение функций</li>
                         </div>
                     </div>
-                    <div class="stage stage5">
+                    <div class="stage stage5 active activeNone">
                         <div class="stage-module">Модуль 5</div>
                         <div class="stage-title">РАБОТА С ПОСРЕДНИКАМИ</div>
                         <div class="stage-result">
@@ -227,7 +227,7 @@
                             <li>Промокоды на скидку </li>
                         </div>
                     </div>
-                    <div class="stage stage6">
+                    <div class="stage stage6 active activeNone">
                         <div class="stage-module">Модуль 6</div>
                         <div class="stage-title">МЫШЛЕНИЕ</div>
                         <div class="stage-result">
@@ -242,7 +242,7 @@
                             <li>Где взять мотивацию и как ее поддерживать</li>
                         </div>
                     </div>
-                    <div class="stage stage7">
+                    <div class="stage stage7 active activeNone">
                         <div class="stage-module">Модуль 7</div>
                         <div class="stage-title">СОВМЕСТНЫЕ ЗАКУПКИ + УПАКОВКА 
                             КОМЕРЧЕСКОГО АККАУНТА (2 ЧАСТИ)</div>
@@ -268,7 +268,7 @@
                         </div>
                         
                     </div>
-                    <div class="stage stage8">
+                    <div class="stage stage8 active activeNone">
                         <div class="stage-module">Модуль 8</div>
                         <div class="stage-title">ПЕРЕПРОДАЖА (2 ЧАСТИ)</div>
                         <div class="stage-result">
@@ -288,7 +288,7 @@
                             <li>Актуальные истории/аватарка/шапка профиля</li>
                         </div>
                     </div>
-                    <div class="stage stage9">
+                    <div class="stage stage9 active activeNone">
                         <div class="stage-module">Модуль 9</div>
                         <div class="stage-title"><img src="./assets/icons/speaker-icon.svg" alt=""><div class="stage-info"><p>ДРОПШИПИНГ</p><p>Спикер Федор Ворон</p></div></div>
                         <div class="stage-result">
@@ -304,7 +304,7 @@
                             <p class="bonus"><img src="./assets/icons/star.svg" alt=""> БОНУС : База проверенных поставщиков</p>
                         </div>
                     </div>
-                    <div class="stage stage10">
+                    <div class="stage stage10 active activeNone">
                         <div class="stage-module">Модуль 10</div>
                         <div class="stage-title">МАСШТАБИРОВАНИЕ</div>
                         <div class="stage-result">
@@ -317,7 +317,7 @@
                             <li>Пошаговый план выхода на доход от 3000$/мес</li>
                         </div>
                     </div>
-                    <div class="stage stage11">
+                    <div class="stage stage11 active activeNone">
                         <div class="stage-module">Модуль 11</div>
                         <div class="stage-title">ВЫПУСКНОЙ</div>
                         <div class="stage-result">
@@ -330,6 +330,7 @@
                             <li>Мастермайнд «вопрос-ответ» </li>
                         </div>
                     </div>
+                    <button class="stage-btn" onclick="addModules()">Вся программа <img src="./assets/icons/reload.svg" alt=""></button>
                     <div class="stage-accordion">
                         <div>
                             <details open>
@@ -623,7 +624,7 @@
                 </div>
             </div>
         </section>
-        <section class="how-ed  ">
+        <section class="how-ed">
             <div class="container">
                 <div class="how-ed-wrapper">
                     <h2>Как проходит обучение</h2>
@@ -642,7 +643,7 @@
                         </div>
                         <div class="how-ed-mobile">
                             <li><img src="./assets/icons/radiobtn.svg" alt="">Структурированные урокиот 20 до 80 минут</li>
-                            <li><img src="./assets/icons/radiobtn.svg" alt="">Еженедельные групповые созвоны (пакет Голд и Vip)</li>
+                            <li><img src="./assets/icons/radiobtn.svg" alt="">Еженедельные групповые созвоны<br> (пакет Голд и Vip)</li>
                             <li><img src="./assets/icons/radiobtn.svg" alt="">Телеграм-чат с поддержкой</li>
                             <li><img src="./assets/icons/radiobtn.svg" alt="">Проверка домашних заданий</li>
                             <li><img src="./assets/icons/radiobtn.svg" alt="">Неограниченный доступ к курсу</li>
@@ -662,7 +663,7 @@
             <div class="container">
                 <div class="rate-wrapper">
                     <h2>Тарифы</h2>
-                    <div class="rate-row">
+                    <div class="rate-row" id="down">
                         <div class="rate-card">
                             <div class="rate-icon"><img src="./assets/images/standart.png" alt=""></div>
                             
@@ -692,8 +693,8 @@
                                 </div>
                             </div>
                             <div class="rate-price"><span>100$</span><span>200$</span></div>
-                            <button class="button payment-btn"><p>Оплатить тариф</p></button>
-                            <button class="button prepayment-btn"><p>внести предоплату 50$</p></button>
+                            <button onclick="document.location='https://secure.wayforpay.com/button/bbdfa2eef8699'" target="_blank" class="button payment-btn"><p>Оплатить тариф</p></button>
+                            <button onclick="document.location='https://secure.wayforpay.com/button/b1a6e83917200'" class="button prepayment-btn"><p>внести предоплату 50$</p></button>
                             <div class="installment-payment"><a href="#!">Оформить рассрочку</a></div>
                         </div>
                         <div class="rate-card">
@@ -724,8 +725,8 @@
                                 </div>
                             </div>
                             <div class="rate-price"><span>100$</span><span>200$</span></div>
-                            <button class="button payment-btn"><p>Оплатить тариф</p></button>
-                            <button class="button prepayment-btn"><p>внести предоплату 50$</p></button>
+                            <button onclick="document.location='https://secure.wayforpay.com/button/bc43798971680'" class="button payment-btn"><p>Оплатить тариф</p></button>
+                            <button onclick="document.location='https://secure.wayforpay.com/button/bf776ad3bfeb2'" class="button prepayment-btn"><p>внести предоплату 50$</p></button>
                             <div class="installment-payment"><a href="#!">Оформить рассрочку</a></div>
                         </div>
                         <div class="rate-card">
@@ -755,8 +756,8 @@
                                     <br>или возврат средств за обучение</p></div>
                             </div>
                             <div class="rate-price"><span>100$</span><span>200$</span></div>
-                            <button class="button payment-btn"><p>Оплатить тариф</p></button>
-                            <button class="button prepayment-btn"><p>внести предоплату 50$</p></button>
+                            <button onclick="document.location='https://secure.wayforpay.com/button/b30b89d1836a4'" class="button payment-btn"><p>Оплатить тариф</p></button>
+                            <button onclick="document.location='https://secure.wayforpay.com/button/bbadb6a780cb2'" class="button prepayment-btn"><p>внести предоплату 50$</p></button>
                             <div class="installment-payment"><a href="#!">Оформить рассрочку</a></div>
                         </div>
                     </div>
@@ -796,7 +797,7 @@
                                         <li>—  Более 2х лет в товарном бизнесе</li>
                                         <li>—  Официальный партнер Монобанк<br><span> и ПриватБанк</span></li>
                                 </div>
-                                <img src="./assets/images/fedor.png" alt="">
+                                <img src="./assets/images/fedo-desc.png" alt="">
                             </div>
                             
                         </div>
@@ -925,11 +926,24 @@
                     <button class="pre-btn rev-btn-p" id="prevbtn"><img src="./assets/icons/arrow-left.svg" alt=""></button>
                     <button class="nxt-btn rev-btn-n" id="nextbtn"><img src="./assets/icons/arrow-right.svg" alt=""></button>
                     <div class="slider">
-                        <div class="slide" ><img class="img" src="./assets/images/отзыв 1.png" /></div>
-                        <div class="slide" ><img class="img" src="./assets/images/отзыв 2.png" /></div>
-                        <div class="slide" ><img class="img" src="./assets/images/отзыв 3.png" /></div>
-                        <div class="slide" ><img class="img" src="./assets/images/отзыв 4.png" /></div>
-                        <div class="slide" ><img class="img" src="./assets/images/отзыв 5.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 1.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 2.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 3.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 4.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 5.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 6.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 7.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 8.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 9.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 10.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 11.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 12.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 13.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 14.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 15.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 16.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 17.png" /></div>
+                        <div class="slide" ><img src="./assets/images/отзыв 18.png" /></div>
                     </div>
                 </div>
             </div>
